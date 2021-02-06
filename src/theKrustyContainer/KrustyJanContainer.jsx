@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
-import KrabbyCeiling from '../theKrustyKrabPlatterPresentations/KrabbyCeiling'; 
+import KrabbyCeiling from '../theKrustyKrabPlatterPresentations/KrabbyCeilingNav'; 
 import MrKrabbyPattyMenu from '../theKrustyKrabPlatterPresentations/mrKrabbyPattyMenu';
 
 // this is where all of my state and functions will be kept 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 // This page will have the navigation 
-export default class KrabbyCeiling extends Component {
+export default class KrabbyCeilingNav extends Component {
 
   render() {
     return (
