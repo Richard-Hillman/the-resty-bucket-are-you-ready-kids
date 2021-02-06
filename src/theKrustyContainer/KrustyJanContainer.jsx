@@ -4,13 +4,20 @@ import KrabbyCeiling from '../theKrustyKrabPlatterPresentations/KrabbyCeiling';
 import MrKrabbyPattyMenu from '../theKrustyKrabPlatterPresentations/mrKrabbyPattyMenu';
 
 // this is where all of my state and functions will be kept 
-export default class KrustyJanContainer extends Component {
+export default class KrustyJanContainer extends React.Component {
   render() {
     return (
 
       <>
-        <KrabbyCeiling />
-        <MrKrabbyPattyMenu />
+        
+        <header>
+          <KrabbyCeiling />
+        </header>
+        
+        <div>
+          <MrKrabbyPattyMenu />
+        </div>
+      
       </>
 
     );
