@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './KrestyReceipts.css';
 
-const KrestyReceipts = ({ krustyReceipts }) => {
+const KrestyReceipts = ({ krestyReceipts }) => {
   return (
-    <>
+    <div className={styles.KrestyReceipts}>
         
       <div>Response</div>
-      <div>{krustyReceipts}</div>
+      <div>{krestyReceipts}</div>
 
-    </>
+    </div>
   );
 };
 

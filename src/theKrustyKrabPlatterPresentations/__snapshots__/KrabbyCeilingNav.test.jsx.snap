@@ -2,8 +2,12 @@
 
 exports[`KrabbyCeilingNav component renders KrabbyCeilingNav 1`] = `
 <DocumentFragment>
-  <div>
-    <div>
+  <div
+    class="krab1"
+  >
+    <div
+      class="krab2"
+    >
       <h1>
         Welcome to The Resty Krab!
       </h1>

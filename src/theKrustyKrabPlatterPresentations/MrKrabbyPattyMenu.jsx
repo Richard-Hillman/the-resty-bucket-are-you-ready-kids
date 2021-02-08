@@ -1,11 +1,13 @@
 /* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './MrKrabbyPattyMenu.css';
+
 
 const MrKrabbyPattyMenu = ({ handleChange, handleSubmit, method, url, json }) => {
   return (
   // eslint-disable-next-line max-len
-    <div style={{ backgroundColor: 'grey', width: '90vw', height: '90vw', color: 'black' }}>
+    <div style={{ backgroundColor: 'grey', width: '90vw', height: '90vw', color: 'black' }} className={styles.MrKrabbyPattyMenu}>
    
       {/* ------------------------ */}
    
@@ -15,7 +17,8 @@ const MrKrabbyPattyMenu = ({ handleChange, handleSubmit, method, url, json }) =>
         <label className="url">
           <input type="text" value={url} name="url" onChange={handleChange} placeholder="Type Api Url Here" />
         </label>
-
+        <br />
+        <br />
         {/* ---------------------------- */}
 
         {/* This is where the radio buttons will be  */}
@@ -68,12 +71,19 @@ const MrKrabbyPattyMenu = ({ handleChange, handleSubmit, method, url, json }) =>
 
         </section>
 
+        <br />
+        <br />
+
         {/* ---------------------------- */}
 
         {/* this is where you type your json
 Will also relocate the button here.  */}
         <label>
           <textarea value={json} name="json" onChange={handleChange}></textarea>
+
+          <br />
+          <br />
+
           <button>SEND</button>
         </label>
     

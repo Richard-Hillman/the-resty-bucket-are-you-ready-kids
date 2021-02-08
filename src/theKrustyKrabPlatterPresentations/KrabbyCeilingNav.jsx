@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-
+import styles from './KrabbyCeilingNav.css';
 
 // This page will have the navigation 
 export default class KrabbyCeilingNav extends Component {
 
   render() {
     return (
-      <div>
+      <div className={styles.KrabbyCeilingNav}>
 
-        <div>
+        <div className="krab2">
           <h1>Welcome to The Resty Krab!</h1>
         </div>
 
