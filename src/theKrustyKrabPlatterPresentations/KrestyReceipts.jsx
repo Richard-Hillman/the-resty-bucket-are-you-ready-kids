@@ -1,18 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const KrustyReceipts = ({ results }) => {
+const KrestyReceipts = ({ krustyReceipts }) => {
   return (
     <>
         
       <div>Response</div>
+      <div>{krustyReceipts}</div>
 
     </>
   );
 };
 
-KrustyReceipts.PropTypes = {
-  results: PropTypes.string.isRequired
+KrestyReceipts.PropTypes = {
+  krestyReceipts: PropTypes.string.isRequired
 };
 
-export default KrustyReceipts;
+export default KrestyReceipts;

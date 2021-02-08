@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KrestyReceipts component renders KrestyReceipts 1`] = `
+<DocumentFragment>
+  <div>
+    Response
+  </div>
+  <div />
+</DocumentFragment>
+`;

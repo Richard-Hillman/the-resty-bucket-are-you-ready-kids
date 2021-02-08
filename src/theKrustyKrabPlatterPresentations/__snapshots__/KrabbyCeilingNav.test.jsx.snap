@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KrabbyCeilingNav component renders KrabbyCeilingNav 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      <h1>
+        Welcome to The Resty Krab!
+      </h1>
+    </div>
+  </div>
+</DocumentFragment>
+`;

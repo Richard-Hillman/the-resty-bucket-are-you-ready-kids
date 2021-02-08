@@ -1,8 +1,9 @@
 /* eslint-disable max-len */
 import React from 'react';
+import Fetch from '../theKrestyService/KrestyService';
 import KrabbyCeilingNav from '../theKrustyKrabPlatterPresentations/KrabbyCeilingNav'; 
 import MrKrabbyPattyMenu from '../theKrustyKrabPlatterPresentations/MrKrabbyPattyMenu';
-import Fetch from '../services/Fetch';
+import KrestyReceipts from '../theKrustyKrabPlatterPresentations/KrestyReceipts';
 
 // this is where all of my state and functions will be kept 
 export default class KrustyJanContainer extends React.Component {
@@ -11,42 +12,57 @@ export default class KrustyJanContainer extends React.Component {
     url: '',
     method: '',
     json: '',
-    results: ''   
+    krestyReceipts: ''   
   }
 
-handleSubmit = (e) => {
-  e.preventDefault();
-  this.fetch();
-}
+  // --------------------------------------------------
 
-handleChange = ({ target }) => {
-  this.setState({ [target.name]: target.value });
-}
+  handleChange = ({ target }) => {
+    this.setState({ [target.name]: target.value });
+  }
 
-fetch = () => {
-  const { method, url, json } = this.state;
-  Fetch(method, url, json)
-    .then(res => this.setSTate({ results: JSON.stringify(res) }));
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.fetch();
+  }
 
-}
+  // --------------------------------------------------
 
-render() {
-  const { method, url, json, results } = this.state;
+  fetch = () => {
+    const { method, url, json } = this.state;
+    Fetch(method, url, json)
+      .then(res => this.setSTate({ krestyReceipts: JSON.stringify(res) }));
+  }
 
-  return (
+  // --------------------------------------------------
 
-    <>
+  render() {
+    const { method, url, json, krestyReceipts } = this.state;
+
+    return (
+
+      <>
         
-      <header>
-        <KrabbyCeilingNav />
-      </header>
+        <header>
+          <KrabbyCeilingNav />
+        </header>
         
-      <div>
-        <MrKrabbyPattyMenu />
-      </div>
+        <div>
+          <MrKrabbyPattyMenu 
+            method={method}
+            url={url}
+            json={json}
+            handleSubmit={this.handleSubmit}
+            handleChange={this.handleChange}       
+          />
+        </div>
       
-    </>
+        <div>
+          <KrestyReceipts krestyReceipts={krestyReceipts} />
+        </div>
 
-  );
-}
+      </>
+
+    );
+  }
 }   
