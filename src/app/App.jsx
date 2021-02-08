@@ -1,5 +1,4 @@
 /* eslint-disable max-len */
-
 import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
@@ -7,8 +6,8 @@ import {
   Switch,
 } from 'react-router-dom';
 import KrustyJanContainer from '../theKrustyContainer/KrustyJanContainer';
-import KrustyHistory from '../theKrustyContainer/KrustyHistory';
-import KrustyHelp from '../theKrustyContainer/KrustyHelp';
+// import KrustyHistory from '../theKrustyContainer/KrustyHistory';
+// import KrustyHelp from '../theKrustyContainer/KrustyHelp';
 
 
 // -----------------------------------------------------------------------------------
@@ -18,19 +17,19 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="body">
-        <Router>
+  
+      <Router>
 
-          <Switch>
+        <Switch>
 
-            {/* this will be the home route */}
-            <Route
-              path="/"
-              exact
-              component = { KrustyJanContainer }
-            />
+          {/* this will be the home route */}
+          <Route
+            path="/"
+            exact
+            component = { KrustyJanContainer }
+          />
 
-            <Route
+          {/* <Route
               path="/history"
               exact
               component = { KrustyHistory }
@@ -40,12 +39,12 @@ export default class App extends Component {
               path="/help"
               exact
               component = { KrustyHelp }
-            />
+            /> */}
 
-          </Switch>
+        </Switch>
 
-        </Router>
-      </div >
+      </Router>
+
     );
   }
 }
