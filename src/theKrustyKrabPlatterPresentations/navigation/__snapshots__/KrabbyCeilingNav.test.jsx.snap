@@ -3,7 +3,7 @@
 exports[`KrabbyCeilingNav component renders KrabbyCeilingNav 1`] = `
 <DocumentFragment>
   <div
-    class="krab1"
+    class="KrabbyCeilingNav"
   >
     <div
       class="krab2"

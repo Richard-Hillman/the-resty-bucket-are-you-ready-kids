@@ -5,7 +5,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import KrustyJanContainer from '../theKrustyContainer/KrustyJanContainer';
+import KrustyJanContainer from '../theKrustyContainer/main/KrustyJanContainer';
 // import KrustyHistory from '../theKrustyContainer/KrustyHistory';
 // import KrustyHelp from '../theKrustyContainer/KrustyHelp';
 
@@ -22,7 +22,6 @@ export default class App extends Component {
 
         <Switch>
 
-          {/* this will be the home route */}
           <Route
             path="/"
             exact

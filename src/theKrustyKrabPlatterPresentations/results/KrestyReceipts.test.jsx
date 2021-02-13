@@ -6,7 +6,7 @@ describe('KrestyReceipts component', () => {
   afterEach(() => cleanup());
   it('renders KrestyReceipts', () => {
     const { asFragment } = render(<KrestyReceipts
-      krestyReceipts=""
+     
     />);
     expect(asFragment()).toMatchSnapshot();
   });

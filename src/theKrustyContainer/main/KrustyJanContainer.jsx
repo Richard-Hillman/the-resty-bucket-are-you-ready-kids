@@ -1,9 +1,9 @@
 /* eslint-disable max-len */
 import React from 'react';
-import Fetch from '../theKrestyService/KrestyService';
-import KrabbyCeilingNav from '../theKrustyKrabPlatterPresentations/KrabbyCeilingNav'; 
-import MrKrabbyPattyMenu from '../theKrustyKrabPlatterPresentations/MrKrabbyPattyMenu';
-import KrestyReceipts from '../theKrustyKrabPlatterPresentations/KrestyReceipts';
+import Fetch from '../../theKrestyService/KrestyService';
+import KrabbyCeilingNav from '../../theKrustyKrabPlatterPresentations/navigation/KrabbyCeilingNav'; 
+import MrKrabbyPattyMenu from '../../theKrustyKrabPlatterPresentations/requestForm/MrKrabbyPattyMenu';
+import KrestyReceipts from '../../theKrustyKrabPlatterPresentations/results/KrestyReceipts';
 
 // this is where all of my state and functions will be kept 
 export default class KrustyJanContainer extends React.Component {
@@ -31,7 +31,7 @@ export default class KrustyJanContainer extends React.Component {
   fetch = () => {
     const { method, url, json } = this.state;
     Fetch(method, url, json)
-      .then(res => this.setSTate({ krestyReceipts: JSON.stringify(res) }));
+      .then(res => this.setState({ krestyReceipts: JSON.stringify(res) }));
   }
 
   // --------------------------------------------------

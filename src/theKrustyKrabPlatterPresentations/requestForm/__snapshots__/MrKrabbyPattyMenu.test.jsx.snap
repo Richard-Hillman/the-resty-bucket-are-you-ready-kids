@@ -3,6 +3,7 @@
 exports[`MrKrabbyPattyMenu component renders MrKrabbyPattyMenu 1`] = `
 <DocumentFragment>
   <div
+    class="MrKrabbyPattyMenu"
     style="background-color: grey; width: 90vw; height: 90vw; color: black;"
   >
     <form>
@@ -10,75 +11,81 @@ exports[`MrKrabbyPattyMenu component renders MrKrabbyPattyMenu 1`] = `
         class="url"
       >
         <input
-          name="urlBar"
+          name="url"
           placeholder="Type Api Url Here"
           type="text"
           value=""
         />
       </label>
-      <label
-        class="radio"
+      <br />
+      <br />
+      <section
+        class="formRadio"
       >
         <label
           for="GET"
         >
           GET
-          <input
-            id="get"
-            name="ApiMethod"
-            type="radio"
-            value="GET"
-          />
         </label>
+        <input
+          id="get"
+          name="method"
+          type="radio"
+          value="GET"
+        />
         <label
           for="POST"
         >
           POST
-          <input
-            id="post"
-            name="ApiMethod"
-            type="radio"
-            value="POST"
-          />
         </label>
+        <input
+          id="post"
+          name="method"
+          type="radio"
+          value="POST"
+        />
         <label
           for="POST"
         >
           POST
-          <input
-            id="put"
-            name="ApiMethod"
-            type="radio"
-            value="PUT"
-          />
         </label>
+        <input
+          id="put"
+          name="method"
+          type="radio"
+          value="PUT"
+        />
         <label
           for="PATCH"
         >
           PATCH
-          <input
-            id="patch"
-            name="ApiMethod"
-            type="radio"
-            value="PATCH"
-          />
         </label>
+        <input
+          id="patch"
+          name="method"
+          type="radio"
+          value="PATCH"
+        />
         <label
           for="DELETE"
         >
           DELETE
-          <input
-            id="delete"
-            name="ApiMethod"
-            type="radio"
-            value="DELETE"
-          />
         </label>
-      </label>
+        <input
+          id="delete"
+          name="method"
+          type="radio"
+          value="DELETE"
+        />
+      </section>
+      <br />
+      <br />
       <label>
         <textarea
           name="json"
         />
+        <br />
+        <br />
         <button>
           SEND
         </button>
